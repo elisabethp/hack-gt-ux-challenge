@@ -2,8 +2,13 @@
     <head>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="https://bevacqua.github.io/dragula/"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
+        <script src="js/app.js"></script>
+
         <link rel="stylesheet" type="text/css" href="styles/original-theme.css">
         <link rel="stylesheet" type="text/css" href="styles/theme.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css">
     </head>
     <body>
         <div id="main-site">
@@ -38,44 +43,48 @@
                         <div id="dashboard-title"><h1>Your Dashboard</h1></div>
                     </div>
                     <div id="spooderman">
-                        <div id="current-status"></div>
+                        <!--<div id="current-status">-->
+                            <!--<div id="status-name">Ruth Petit - Bois</div>-->
+                            <div id="status-details">
+                                <!--<div>
+                                    <div class="status-help"><img src="imgs/help.svg"/></div>
+                                </div> -->
+                                <div class="status-div" id="portfolio-info">
+                                    <div class="status-title" id="portfolio-title">Portfolio Value:</div>
+                                    <div class="status-value" id="portfolio-val">100.78</div>
+                                </div> <!-- end portfolio info -->
+                                <div class="status-div" id="buying-info">
+                                    <div class="status-title" id="buying-title">Buying Power:</div>
+                                    <div class="status-value" id="buying-val">25.67</div>
+                                </div> <!-- end buying info -->
+                            </div> <!-- end status-details-->
+                        <!--</div>-->
                     </div>
                 </div> <!-- end below header section-->
                 <div id="grid"> 
                     <div class="halves" id="left-grid"> 
                         <div class="top-q quarters" id="top-left-grid">
-                            <div class="left-sec section" id="TL1">
-
-                            </div> <!-- end top left 1-->
-                            <div class="section" id="TL2">
-
-                            </div> <!-- end top left 2-->
+                            <div id="graph-widget">
+                                <div class="widget-title"><h2>Market</h2></div>
+                                <div class="widget-content" id="graph">
+                                    <div id="top-graph-desc"></div>
+                                    <div id="graph-svg">
+                                        <svg></svg>
+                                    </div>
+                                    <div id="graph-toggle"></div>
+                                </div>
+                            </div> 
                         </div>
                         <div class="quarters" id="bottom-left-grid">
-                            <div class="left-sec section" id="BL1">
-
-                            </div> <!-- end bottom left 1-->
-                            <div class="section" id="BL2">
-
-                            </div> <!-- end bottom left 2-->    
+                             
                         </div>
                     </div>
                     <div class="halves" id="right-grid">
                         <div class="top-q quarters" id="top-right-grid">
-                            <div class="left-sec section" id="TR1">
-
-                            </div> <!-- end top right 1-->
-                            <div class="section" id="TR2">
-
-                            </div> <!-- end top right 2-->
+                            
                         </div>
                         <div class="quarters" id="bottom-right-grid">
-                            <div class="left-sec section" id="BR1">
-
-                            </div> <!-- end bottom right 1-->
-                            <div class="section" id="BR2">
-
-                            </div> <!-- end bottom right 2-->
+                            
                         </div>
                     </div>
                 </div> <!-- end grid -->
