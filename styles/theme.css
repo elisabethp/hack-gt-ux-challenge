@@ -259,4 +259,31 @@ a {
     height: 100%;
 }
 
+path.line {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 1;
+}
 
+.mg-x-axis {
+    fill: #171718 !important;
+}
+.mg-x-axis text {
+    fill: white !important;
+}
+
+#graph-toggle {
+    padding-bottom: 0;
+}
+
+._162aHJLdCpaG9r93LD3XJ9._2-gmgKb19Qwq_bOCLAAyJ1 a {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+._162aHJLdCpaG9r93LD3XJ9._2-gmgKb19Qwq_bOCLAAyJ1 a:hover {
+    transition: text-decoration 0.5s linear;
+    text-decoration: underline;
+    text-decoration-color: #f45531;
+    text-decoration-line: 500;
+}

@@ -17,4 +17,24 @@ $("document").ready(function() {
         autoWidth: true
     });*/
 
+    d3.json('json/cumulativeLineData.json', function(data) {
+        data = MG.convert.date(data, 'date');
+        MG.data_graphic({
+            chart_type: "line",
+            data: data,
+            color: ['tomato', '#f45531'],
+            area: false,
+            left: 5,
+            right: 5,
+            full_width: true,
+            full_height: true,
+            xax_count: 4,
+            y_axis: false,
+            x_axis: false,
+            target: '#graph-svg'
+        });
+
+    });
+
+
 })

@@ -22561,8 +22561,10 @@ body .theme-crypto-down.theme-crypto-down
 }
 
 ._1XUYxIV_TEyI303Ke6cJEa {
-  border-bottom: 1px solid;
-  margin: 24px 0 12px;
+  background-color: #171718;
+  padding-left: 1.5%;
+  /*border-bottom: 1px solid;
+  margin: 24px 0 12px;*/
 }
 
 body.theme-open-up ._1XUYxIV_TEyI303Ke6cJEa,
