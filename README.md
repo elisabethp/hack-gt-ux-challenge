@@ -1,5 +1,5 @@
-# hack-gt-ux-challenge
-hackgt robinhood ux challenge: redesign an interface to make it better
+# HackGT: Dare to Venture
+This project is a submission to HackGT's 6th annual hackathon. This project attempts to solve the challenge of "Best UX" by taking a subpar user experience and transforming it into one much more pleasurable.
 
 ## Running the Application (MacOS)
 
