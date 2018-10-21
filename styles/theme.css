@@ -4,6 +4,15 @@ body {
     background-color: #1b1b1d;
     color: white;
 }
+a {
+    color: white;
+}
+.widget-content a:hover {
+    background-color: #171718;
+}
+#news-widget .widget-content a:hover {
+    background-color: initial;
+}
 #main-site {
     display: flex;
     flex-direction: column;
@@ -57,15 +66,15 @@ body {
 #main-body {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 55px - 2.5%);
+    min-height: calc(100% - 55px - 2.5%);
     margin: 0 2.5% 2.5% 2.5%;
     /*background-color: aquamarine;*/
 }
 #below-header-section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     /*background-color: blue;*/
+    justify-content: space-between;
     display: flex;
     width: 100%;
     height: 100px;
@@ -76,8 +85,12 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 50%;
+    width: 10%;
     height: 100%;
+    margin-left: 0.5%;
+}
+#spooderman img {
+    height: 25px;
 }
 #status-name {
     font-weight: 500;
@@ -112,24 +125,28 @@ body {
 .status-value {
     font-size: 1.4em;
 }
+#body-sep {
+    width: 100%;
+    border: border: .5px solid #fff;
+}
 /* GRID */
 #grid {
     /*background-color: brown;*/
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: calc(100% - 100px);
+    min-height: calc(100% - 100px);
 }
 .halves:first-child {
-    margin-right: 0.5%;
+    margin-right: 0.7%;
 }
 .halves {
     display: flex;
     flex-direction: column;
     /*background-color: bisque;*/
     display: flex;
-    width: calc(50% - .25%);
-    height: 100%;
+    width: calc(50% - .35%);
+    min-height: 100%;
 }
 .top-q {
     margin-bottom: .5%;
@@ -141,15 +158,10 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 50%;
+    max-height: 50%;
+    margin-bottom: 30px;
 }
-.left-sec {
-    margin-right: .5%;
-}
-.section {
-    /*background-color: aliceblue;*/
-    width: 50%;
-}
+
 #top-right-grid {
     display: flex;
     flex-direction: row;
@@ -161,11 +173,11 @@ body {
 /* WIDGETS */
 .widget-title {
     width: 100%;
-    height: 9%; /*10*/
-    padding: .5% 0;
+    /*height: 10%; 10*/
+    padding: 1% 0;
 }
 .widget-content {
-    height: 100%;
+    height: calc(100% - 12%);
     width: 100%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -175,7 +187,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 /* GRAPH */
@@ -200,13 +212,51 @@ body {
   }
 
 /* NEWS */
-  
+._1hm00Z0F3XhDWn6wzQzVsT:hover {
+    background-color: #171718;
+}
+#news-widget .widget-content {
+    padding: 0 !important; 
+}
 /* STOCKS */
 #mystocks-widget {
     width: 50%;
+}
+#mystocks-widget .widget-content, #news-widget .widget-content {
+    padding: 1.5% 0;
+    overflow-y: scroll;
+}
+._3bs3MFU9layPxpGyj4-iIW {
+    display: contents;
+}
+#mystocks-widget a {
+    border-bottom: 1px solid #1b1b1d;
 }
 
 /* WATCHLIST */
 #watchlist-widget {
     width: 50%;
 }
+
+/* TOP MOVERS */
+
+#movers-widget {
+    height: initial;
+}
+#movers-widget .widget-content {
+    transition: none;
+    box-shadow: none;
+}
+#movers-widget .owl-carousel, #movers-widget .owl-carousel .slide, #movers-widget .widget-content {
+    height: initial;
+}
+#movers-widget .slide {
+    padding: 1px;
+}
+
+/* CAROUSEL */
+.owl-carousel, .owl-carousel .slide {
+    height: 100%;
+}
+
+
